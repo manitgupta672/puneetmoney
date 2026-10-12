@@ -1,42 +1,166 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>PuneetMoney.in — Empowering individuals and families to build confidence in financial decision-making.</title>
-  <meta name="description" content="Practical, actionable personal finance guidance for present, future and emergency needs — loans, insurance, investments, tax planning and more." />
+  <meta name="description"
+    content="Practical, actionable personal finance guidance for present, future and emergency needs — loans, insurance, investments, tax planning and more." />
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
   <link rel="manifest" href="images/site.webmanifest">
   <style>
-    :root{--bg:#f6f7fb;--card:#ffffff;--muted:#6b7280;--accent:#0b74de;--accent-2:#0d9488}
-    *{box-sizing:border-box}
-    body{font-family:Inter, -apple-system,Segoe UI, Roboto, "Helvetica Neue", Arial; margin:0; background:var(--bg); color:#0f172a; line-height:1.5}
-    header{background:linear-gradient(90deg,#0b74de22 0%, #0d948822 100%); padding:28px 16px}
-    .container{max-width:1000px;margin:0 auto;padding:24px}
-    h1{margin:0;font-size:28px}
-    p.lead{color:var(--muted); margin-top:8px}
-    .subtitle{color:var(--muted); margin-top:0px}
-    nav{margin-top:12px}
-    nav a{margin-right:12px;color:var(--accent);text-decoration:none;font-weight:600}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:18px}
-    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
-    .small{font-size:13px;color:var(--muted)}
-    ul.clean{padding-left:18px;margin:8px 0}
-    .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-    .btn{padding:8px 12px;border-radius:8px;border:0;cursor:pointer;font-weight:600}
-    .btn-primary{background:var(--accent);color:white}
-    .btn-ghost{background:transparent;border:1px solid #e6eefb;color:var(--accent)}
-    footer{padding:28px 0;text-align:center;color:var(--muted);font-size:13px}
-    .age-table{width:100%;border-collapse:collapse;margin-top:8px}
-    .age-table th,.age-table td{padding:8px;border:1px solid #edf2f7;text-align:left}
-    .call-link {text-decoration: none; font-size: 18px;}
-    .logo-div {margin-right: 16px; display: block;}
-    .title-div {display: block;}
-    @media (max-width:520px){h1{font-size:20px}}
+    :root {
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --accent: #0b74de;
+      --accent-2: #0d9488
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      font-family: Inter, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+      margin: 0;
+      background: var(--bg);
+      color: #0f172a;
+      line-height: 1.5
+    }
+
+    header {
+      background: linear-gradient(90deg, #0b74de22 0%, #0d948822 100%);
+      padding: 28px 16px
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 24px
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px
+    }
+
+    p.lead {
+      color: var(--muted);
+      margin-top: 8px
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin-top: 0px
+    }
+
+    nav {
+      margin-top: 12px
+    }
+
+    nav a {
+      margin-right: 12px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 18px
+    }
+
+    .card {
+      background: var(--card);
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06)
+    }
+
+    .small {
+      font-size: 13px;
+      color: var(--muted)
+    }
+
+    ul.clean {
+      padding-left: 18px;
+      margin: 8px 0
+    }
+
+    .actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 12px
+    }
+
+    .btn {
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 0;
+      cursor: pointer;
+      font-weight: 600
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: white
+    }
+
+    .btn-ghost {
+      background: transparent;
+      border: 1px solid #e6eefb;
+      color: var(--accent)
+    }
+
+    footer {
+      padding: 28px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px
+    }
+
+    .age-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px
+    }
+
+    .age-table th,
+    .age-table td {
+      padding: 8px;
+      border: 1px solid #edf2f7;
+      text-align: left
+    }
+
+    .call-link {
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .logo-div {
+      margin-right: 16px;
+      display: block;
+    }
+
+    .title-div {
+      display: block;
+    }
+
+    @media (max-width:520px) {
+      h1 {
+        font-size: 20px
+      }
+    }
   </style>
 </head>
+
 <body>
   <header>
     <div class="container">
@@ -46,20 +170,26 @@
       <div class="title-div">
         <h1>PuneetMoney.in</h1>
         <h2 class="subtitle">सारथी भरोसे का..</h2>
-        
+
       </div>
-      <p class="lead">Provide all Personal Financial Advice essential to meet all personal requirements — current, future and emergency or any other specific needs. Empowering individuals and families to build confidence in financial decision-making.</p>
-        <nav>
-          <a href="#essentials">Essentials</a>
-          <a href="#contact">Contact</a>
-        </nav>
+      <p class="lead">Provide all Personal Financial Assistance essential to meet all personal requirements — current,
+        future and emergency or any other specific needs. Empowering individuals and families to build confidence in
+        financial decision-making.</p>
+      <p class="lead" style="font-size: 12px; font-style: italic;">Mutual Fund investments are subject to market risks,
+        read all scheme related documents carefully.
+      </p>
+      <nav>
+        <a href="#essentials">Essentials</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
   <main class="container" role="main">
     <section id="essentials" aria-labelledby="essentials-heading">
       <h2 id="essentials-heading">What we cover</h2>
-      <p class="small">Practical, step-by-step guidance across core personal finance topics. Short actionable tips follow each topic so you can apply them quickly.</p>
+      <p class="small">Practical, step-by-step guidance across core personal finance topics. Short actionable tips
+        follow each topic so you can apply them quickly.</p>
 
       <div class="grid" style="margin-top:12px">
         <article class="card" id="loan">
@@ -115,12 +245,14 @@
 
         <article class="card" id="mutual-funds">
           <h3>6. Mutual Funds (including churning)</h3>
-          <p class="small">Use SIPs (Systematic Investment Plans) for disciplined investing; avoid excessive churning.</p>
+          <p class="small">Use SIPs (Systematic Investment Plans) for disciplined investing; avoid excessive churning.
+          </p>
           <ul class="clean">
             <!-- <li>Match fund type to goal (debt for short-term, equity for long-term).</li>
             <li>Prefer low-cost funds (index/ETF) for passive exposure; active funds selectively.</li>
             <li>Avoid frequent switching (churning) — costs and taxes reduce returns.</li> -->
-            <li>Choose Mutual funds as per your goal and requirements depending on your age, financial requirements, risk appetite and other various factors.</li>
+            <li>Choose Mutual funds as per your goal and requirements depending on your age, financial requirements,
+              risk appetite and other various factors.</li>
             <li>Choose fund type (debt for short-term, equity for long-term).</li>
             <li>Prefer low-cost funds (index/ETF) for passive exposure; active funds selectively.</li>
             <li>Switching (churning) of Mutual Funds as per market conditions and to reduce tax burden.</li>
@@ -149,16 +281,17 @@
       </div>
     </section>
 
-    
 
-    
+
+
 
     <section id="contact" style="margin-top:20px">
       <div class="card">
         <h2>Contact</h2>
         <p><strong>Call:</strong> <a class="call-link" href="tel:+919413383280">+919413383280</a></p>
         <p><strong>Whatsapp:</strong> <a class="call-link" href="https://wa.me/919413383280">click here to chat</a></p>
-        <p><strong>Email:</strong> <a href="mailto:puneetghuf@rediffmail.com" class="call-link">puneetghuf@rediffmail.com</a></p>
+        <p><strong>Email:</strong> <a href="mailto:puneetghuf@rediffmail.com"
+            class="call-link">puneetghuf@rediffmail.com</a></p>
         <p class="small">Get in touch for personalised financial guidance tailored to your specific needs.</p>
       </div>
     </section>
@@ -166,10 +299,12 @@
 
   <footer>
     <div class="container">
-      <div style="margin-bottom:6px">© PuneetMoney.in — Empowering individuals and families to build confidence in financial decision-making.</div>
+      <div style="margin-bottom:6px">© PuneetMoney.in — Empowering individuals and families to build confidence in
+        financial decision-making.</div>
       <div class="small">Built for clarity • Print-friendly • Actionable</div>
     </div>
   </footer>
 
 </body>
+
 </html>
